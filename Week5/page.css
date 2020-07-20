@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #383838;
+
+}
+
+li{
+    font-size: 20px;
+    color: #383838;
+    padding: 20px;
+    text-align: left;
+    width: 300px;
+}

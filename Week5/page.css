@@ -10,5 +10,9 @@ li{
     color: #383838;
     padding: 20px;
     text-align: left;
-    width: 300px;
+    width: 600px;
+    font-family: "Helvetica";
+}
+b{
+    font-size: 30px;
 }

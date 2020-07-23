@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treasure Art Studio</title>
+    <link rel = "stylesheet" href="style.css">
 </head>
 <body>
 
@@ -13,26 +14,35 @@
 
 <style>
 
+.nospace
+{
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    padding: 0px; /*this aint working*/
+
+}
 .lordofallcontainers{
     display: flex;
     justify-content: center;
 
 }
 
-.contain1 {
-    display:flex;
+.contain1 { /*purple box*/
+    display: flex;
     flex-direction: row;
     width: 1532px;
     justify-content: center;
-    
 }
 
 .contain1 div {
       border:1px #ffffff solid;
-      padding: 1px;
+      /*padding-left: 1px;
+      padding-right: 1px;
+      padding-top: 0px;*/
 }
 
-.contain2 {
+.contain2 { /*button*/
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -43,10 +53,10 @@
    justify-content: center;
 }
 
-.contain3{
+.contain3{ /*pictures*/
     display: flex;
-    border:1px #ffffff solid;
-    padding: 1px;
+    /*border: 0px #ffffff solid;
+    padding: 0px;*/
     justify-content: space-between;
 }
 
@@ -83,7 +93,8 @@
 .smoler {
     width: 508px;
     height: 300px;
-    border: 1px #ffffff solid;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #ffffff solid; 
 }
 /*
 .block {
@@ -139,58 +150,62 @@ a.ntiline {
 
 </style>
 
-<div class = "lordofallcontainers">
+<div class = "nospace">
 
-<div class = "contain3">
-        <a href="#">
+    <div class = "lordofallcontainers">
+
+    <div class = "contain3">
+            <a href="#">
+                
+                <img class = "smoler" src="img/about-us.jpg">
             
-            <img class = "smoler" src="img/about-us.jpg">
-        
-        </a>
-        <a href="#">
+            </a>
+            <a href="#">
+                
+                <img class = "smoler" src="img/our-class.jpg" >
             
-            <img class = "smoler" src="img/our-class.jpg" >
-        
-        </a>
-        <a href="#">
+            </a>
+            <a href="#">
+                
+                <img class = "smoler" src="img/our-teachers.jpg">
             
-            <img class = "smoler" src="img/our-teachers.jpg">
-        
-        </a>
+            </a>
+
+        </div>
 
     </div>
+    <div class = "lordofallcontainers">
 
-</div>
-<div class = "lordofallcontainers">
+        <div class = "contain1">
 
-    <div class = "contain1">
+            <div class = " box1 bg little ">
+                <h1 style = "font-size: 30px"> About Us </h1>
+                    <p> Treasure Art Studio strives to foster the imagination and creativity of children through storybooks
+                    and art classes. Founded by Louisa Kwan-Shabani, the studio embraces the vision
+                    that "every child is potentially the light of the world" creating art experiences
+                    for children to assist in training them and helping to reveal their inner treasures. </p>
+            </div>
 
-        <div class = " box1 bg little ">
-            <h1 style = "font-size: 30px"> About Us </h1>
-                <p> Treasure Art Studio strives to foster the imagination and creativity of children through storybooks
-                and art classes. Founded by Louisa Kwan-Shabani, the studio embraces the vision
-                that "every child is potentially the light of the world" creating art experiences
-                for children to assist in training them and helping to reveal their inner treasures. </p>
-        </div>
+            <div class = " box2 bg little">
+                <h1 style = "font-size: 30px"> Our Teachers </h1>
+                    <p> Our teachers are both passionate about art and children's education.
+                    Trained in both visual arts and design, with the experience of training young children,
+                    our teachers strive to create an environment that is most enriching for the child
+                    to explore different mediums within different contexts. Our teachers all hold a Victorian Working With Children's
+                    Check and have public liability insurance.
+                    </p>
+            </div>
 
-        <div class = " box2 pos smoler bg little">
-            <h1 style = "font-size: 30px"> Our Teachers </h1>
-                <p> Our teachers are both passionate about art and children's education.
-                Trained in both visual arts and design, with the experience of training young children,
-                our teachers strive to create an environment that is most enriching for the child
-                to explore different mediums within different contexts. Our teachers all hold a Victorian Working With Children's
-                Check and have public liability insurance.
-                </p>
-        </div>
+            <div class = " box3 bg little" >
+                <h1 style = "font-size: 30px"> Our Class </h1>
+                    <p> Every Saturday during school term, 9am - 10am at Clota Cottage in Box Hill,
+                        we host a small size art class particularly for young children from 4 years old. It is a multi-age class
+                        for beginners as well as those children with more experience in making art.
+                        The classes explore different methods such as drawing, painting, modelling, papercraft and more.
+                        Drop into one of our classes if you feel your child would like to make more art during their school term!
+                    </p>
+            </div>
 
-        <div class = " box3 bg little" >
-            <h1 style = "font-size: 30px"> Our Class </h1>
-                <p> Every Saturday during school term, 9am - 10am at Clota Cottage in Box Hill,
-                    we host a small size art class particularly for young children from 4 years old. It is a multi-age class
-                    for beginners as well as those children with more experience in making art.
-                    The classes explore different methods such as drawing, painting, modelling, papercraft and more.
-                    Drop into one of our classes if you feel your child would like to make more art during their school term!
-                </p>
         </div>
 
     </div>

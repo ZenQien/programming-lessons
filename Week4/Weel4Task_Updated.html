@@ -14,32 +14,9 @@
 
 <style>
 
-.nospace
-{
-    display: flex;
-    flex-direction: column;
-    border: 0px;
-    padding: 0px; /*this aint working*/
-
-}
 .lordofallcontainers{
     display: flex;
     justify-content: center;
-
-}
-
-.contain1 { /*purple box*/
-    display: flex;
-    flex-direction: row;
-    width: 1532px;
-    justify-content: center;
-}
-
-.contain1 div {
-      border:1px #ffffff solid;
-      /*padding-left: 1px;
-      padding-right: 1px;
-      padding-top: 0px;*/
 }
 
 .contain2 { /*button*/
@@ -52,50 +29,67 @@
 .container2 div{
    justify-content: center;
 }
-
-.contain3{ /*pictures*/
+/* 
+.col1{
     display: flex;
-    /*border: 0px #ffffff solid;
-    padding: 0px;*/
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    background: #D310F7;
 }
+.col2{
+    display: flex;
+    flex-direction: column;
+}
+.col3{
+    display: flex;
+    flex-direction: column;
+} */
+
 
 .little {
   font-family: Montserrat+Subrayada;
   font-size: 20px;
   color: white;
   text-align: center;
+  background-color: #D310F7;
+  padding-bottom: 10px;
+  line-height: 30px;
+  word-wrap: break-word;
+  align-items: center;
 }
 
 .box1 {
- flex:1;
- order:1
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    order:1;
 }
 
 .box2 {
+    display: flex;
+    flex-direction: column;
     flex:1;
     order:2;
 }
 
 .box3 {
+    display: flex;
+    flex-direction: column;
     flex:1;
     order:3;
 }
 
-.box4{
-    flex:3;
-}
-
-.bg {
+/*.bg {
   background-color: #D310F7;
+  top: 30px;
+}
+*/
+.smoler {
+    width: 676px;
+    height: 380px;
+
 }
 
-.smoler {
-    width: 508px;
-    height: 300px;
-    border-left: 1px #ffffff solid;
-    border-right: 1px #ffffff solid; 
-}
 /*
 .block {
 position: absolute;
@@ -150,45 +144,35 @@ a.ntiline {
 
 </style>
 
-<div class = "nospace">
+<div>
 
     <div class = "lordofallcontainers">
 
-    <div class = "contain3">
-            <a href="#">
+            <div class = " box1 little " style = " border-right: 1px #ffffff solid">
+
+                <a href="#">
                 
-                <img class = "smoler" src="img/about-us.jpg">
-            
-            </a>
-            <a href="#">
+                    <img class = "smoler" src="img/about-us.jpg">
                 
-                <img class = "smoler" src="img/our-class.jpg" >
-            
-            </a>
-            <a href="#">
-                
-                <img class = "smoler" src="img/our-teachers.jpg">
-            
-            </a>
+                </a>
 
-        </div>
-
-    </div>
-    <div class = "lordofallcontainers">
-
-        <div class = "contain1">
-
-            <div class = " box1 bg little ">
                 <h1 style = "font-size: 30px"> About Us </h1>
-                    <p> Treasure Art Studio strives to foster the imagination and creativity of children through storybooks
+                    <p style = "width: 600px"> Treasure Art Studio strives to foster the imagination and creativity of children through storybooks
                     and art classes. Founded by Louisa Kwan-Shabani, the studio embraces the vision
                     that "every child is potentially the light of the world" creating art experiences
                     for children to assist in training them and helping to reveal their inner treasures. </p>
             </div>
 
-            <div class = " box2 bg little">
+            <div class = " box2 little" style = " border-right: 1px #ffffff solid">
+                
+                <a href="#">
+                
+                    <img class = "smoler" src="img/our-class.jpg" >
+                
+                </a>
+
                 <h1 style = "font-size: 30px"> Our Teachers </h1>
-                    <p> Our teachers are both passionate about art and children's education.
+                    <p style = "width: 600px"> Our teachers are both passionate about art and children's education.
                     Trained in both visual arts and design, with the experience of training young children,
                     our teachers strive to create an environment that is most enriching for the child
                     to explore different mediums within different contexts. Our teachers all hold a Victorian Working With Children's
@@ -196,9 +180,16 @@ a.ntiline {
                     </p>
             </div>
 
-            <div class = " box3 bg little" >
+            <div class = " box3 little">
+
+                <a href="#">
+                
+                    <img class = "smoler" src="img/our-teachers.jpg">
+                
+                </a>
+
                 <h1 style = "font-size: 30px"> Our Class </h1>
-                    <p> Every Saturday during school term, 9am - 10am at Clota Cottage in Box Hill,
+                    <p style = "width: 600px"> Every Saturday during school term, 9am - 10am at Clota Cottage in Box Hill,
                         we host a small size art class particularly for young children from 4 years old. It is a multi-age class
                         for beginners as well as those children with more experience in making art.
                         The classes explore different methods such as drawing, painting, modelling, papercraft and more.
@@ -206,11 +197,9 @@ a.ntiline {
                     </p>
             </div>
 
-        </div>
-
     </div>
-
 </div>
+
 
 <div class = "contain2">
     <div>

@@ -12,18 +12,63 @@
         flex-wrap: wrap;
     }
 
+    img{
+        width: 1200px;
+        height: 1200px;
+    }
+
+    @media (max-width: 320px) {
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    @media (min-width: 1024px){
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    }
+
+    @media (min-width: 1920px){
+        img{
+            width: 700px;
+            height: 700px;
+        }
+    }
+
 </style>
 
 <body>
-https://www.ssbwiki.com/images/3/35/Min_Min_SSBU.png
-https://www.ssbwiki.com/images/d/da/Captain_Falcon_SSBU.png
-https://www.ssbwiki.com/images/c/c4/Incineroar_SSBU.png
-https://www.ssbwiki.com/images/2/2b/Isabelle_SSBU.png
-https://www.ssbwiki.com/images/8/81/Lucas_SSBU.png
-https://www.ssbwiki.com/images/4/46/Mega_Man_SSBU.png
 
+    <div class = "flex">
 
-    <div class = "img"></div>
+            <div>
+                <img src = "https://www.ssbwiki.com/images/3/35/Min_Min_SSBU.png" alt = "Min Min">
+            </div>
+
+            <div>
+                <img src = "https://www.ssbwiki.com/images/d/da/Captain_Falcon_SSBU.png" alt = "Captain Falcon">
+            </div>
+
+            <div>
+                <img src = "https://www.ssbwiki.com/images/c/c4/Incineroar_SSBU.png" alt = "Incineroar">
+            </div>
+
+            <div>
+                <img src = "https://www.ssbwiki.com/images/2/2b/Isabelle_SSBU.png" alt = "Isabelle">
+            </div>
+
+            <div>
+                <img src = "https://www.ssbwiki.com/images/8/81/Lucas_SSBU.png" alt = "Lucas">
+            </div>
+
+            <div>
+                <img src = "https://www.ssbwiki.com/images/4/46/Mega_Man_SSBU.png" alt = "Mega Man">
+            </div>
+
+    </div>
 
 </body>
 </html>

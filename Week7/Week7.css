@@ -1,0 +1,44 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.img{
+    content:url(https://www.ssbwiki.com/images/3/35/Min_Min_SSBU.png);
+}
+div.img2{
+    content: url(https://www.ssbwiki.com/images/d/da/Captain_Falcon_SSBU.png);
+}
+div.img3{
+    content: url(https://www.ssbwiki.com/images/c/c4/Incineroar_SSBU.png);
+}
+div.img4{
+    content: url(https://www.ssbwiki.com/images/2/2b/Isabelle_SSBU.png); 
+}
+div.img5{
+    content: url(https://www.ssbwiki.com/images/8/81/Lucas_SSBU.png); 
+}
+div.img6{
+    content: url(https://www.ssbwiki.com/images/4/46/Mega_Man_SSBU.png); 
+}
+
+@media (min-width: 325px) {
+    .imgs{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px){
+    .imgs{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1920px){
+    .imgs{
+        width: 600px;
+        height: 600px;
+    }
+}

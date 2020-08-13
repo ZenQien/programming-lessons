@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <div>
+
+        <header>
+            <h1 id = "title">Survey</h1>
+            <p id="description"> This is a Survey</p>
+        </header>
+
+        <form id = "survey-form">
+
+            <div>
+                <label id = "name-label" for = "name">Name</label>
+                <input type = "text" name = "name" id = "name"
+                placeholder = "Enter your name" required>
+            </div>
+
+            <div>
+                <label id = "email-label" for = "email">Email</label>
+                <input type = "email" name = "email" id = "email"
+                placeholder = "Enter your Email" required>
+            </div>
+            
+            <div>
+                <label id = "number-label" for = "number">
+                    "Age"
+                    <span>(optional)</span>
+                </label>
+                <input type = "number" name = "age" id = "number" 
+                min = "10" max = "99"
+                placeholder = "Age">
+            </div>
+                
+            <div>
+                <p>
+                    Which one will u pick lmao
+                </p>
+                <select id = "dropdown" name = "role" required>
+                    <option disabled selected value>Select</option>
+                    <option value = "apple">Apple</option>
+                    <option value = "banana">Banana</option>
+                    <option value = "orange">Orange</option>
+                    <option value = "strawberry">Strawberry</option>
+                    <option value = "other">Other</option>
+                </select>
+            </div>
+
+            <div>
+
+                <p>Here are sum radio buttons</p>
+
+                <label>
+                    <input name = "radio" value = "radio button 1" type = "radio"
+                    checked>
+                    radio button 1
+                </label>
+
+                <label>
+                    <input name = "radio" value = "radio button 2" type = "radio"
+                    checked>
+                    radio button 2
+                </label>
+
+                <label>
+                    <input name = "radio" value = "radio button 3" type = "radio"
+                    checked>
+                    radio button 3
+                </label>
+
+            </div>
+
+            <div>
+                <p>Plz write something in the text area</p>
+                <textarea id = "comments" name = "comment"
+                placeholder = "Write ur stuff here"></textarea>
+            </div>
+
+            <div>
+                <button type = "submit" id = "submit">
+                    FIN
+                </button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>   

@@ -1,3 +1,62 @@
 h1{
-    text-align: center;
+    font-family: helvetica;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.flex2{
+    display: flex;
+    border: 10px;
+}
+
+form{
+    background: #4cb15b;
+    border-radius: 0.4rem;
+    padding: 20px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 1.5px;
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 0.5px;
+    font-family: helvetica;
+}
+
+.group{
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.radio{
+    width: 10px;
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url(https://external-preview.redd.it/VxkybE_jUEwTAlcGreEYLy2QgIJh4K67c9oNv4HJznk.jpg?auto=webp&s=39ad68768f1a837d6c7fe9ec96bb333ecb855d72);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

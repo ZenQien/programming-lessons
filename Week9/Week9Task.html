@@ -4,40 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="Week9Task.css">
 </head>
 <body>
-    <div>
+
+    <div class = flex>
 
         <header>
-            <h1 id = "title">Survey</h1>
-            <p id="description"> This is a Survey</p>
+            <h1 id = "title" style = "text-align: center">Survey</h1>
+            <p id="description" style = "text-align: center">This is a Survey</p>
         </header>
+
+    </div>
+
+    <div class = flex>
 
         <form id = "survey-form">
 
-            <div>
+            <div class = group>
                 <label id = "name-label" for = "name">Name</label>
+                
                 <input type = "text" name = "name" id = "name"
                 placeholder = "Enter your name" required>
             </div>
 
-            <div>
+            <div class = group>
                 <label id = "email-label" for = "email">Email</label>
+                
                 <input type = "email" name = "email" id = "email"
                 placeholder = "Enter your Email" required>
             </div>
             
-            <div>
+            <div class = group>
                 <label id = "number-label" for = "number">
-                    "Age"
+                    Age
                     <span>(optional)</span>
+                    
                 </label>
                 <input type = "number" name = "age" id = "number" 
                 min = "10" max = "99"
                 placeholder = "Age">
             </div>
                 
-            <div>
+            <div class = group>
                 <p>
                     Which one will u pick lmao
                 </p>
@@ -51,37 +60,41 @@
                 </select>
             </div>
 
-            <div>
+            <div class = group>
 
                 <p>Here are sum radio buttons</p>
 
-                <label>
-                    <input name = "radio" value = "radio button 1" type = "radio"
-                    checked>
-                    radio button 1
-                </label>
+                <div>
 
-                <label>
-                    <input name = "radio" value = "radio button 2" type = "radio"
-                    checked>
-                    radio button 2
-                </label>
+                    <label>
+                        <input name = "radio" value = "radio button 1" type = "radio"
+                        checked class = radio>
+                        radio button 1
+                    </label>
 
-                <label>
-                    <input name = "radio" value = "radio button 3" type = "radio"
-                    checked>
-                    radio button 3
-                </label>
+                    <label>
+                        <input name = "radio" value = "radio button 2" type = "radio"
+                        checked class = radio>
+                        radio button 2
+                    </label>
+
+                    <label>
+                        <input name = "radio" value = "radio button 3" type = "radio"
+                        checked class = radio>
+                        radio button 3
+                    </label>
+
+                </div>
 
             </div>
 
-            <div>
+            <div class = group>
                 <p>Plz write something in the text area</p>
                 <textarea id = "comments" name = "comment"
                 placeholder = "Write ur stuff here"></textarea>
             </div>
 
-            <div>
+            <div class = group>
                 <button type = "submit" id = "submit">
                     FIN
                 </button>

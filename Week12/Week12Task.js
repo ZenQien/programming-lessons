@@ -1,35 +1,41 @@
-var button = document.getElementById('remove').addEventListener
-('click', buttonClick);
+var listItems = document.getElementById('items').getElementsByTagName('li'),
 
-var itemList = document.querySelector('#items');
+    liarray = map(listItems, getText);
 
-    function buttonClick(){
-
-       console.log(itemList.firstElementChild);
-       itemList.firstElementChild.textContent = ' ';
-
+function map(arrayLike, fn){
+    var ret = [], i = -1, len = arrayLike.length;
+    while (++i < len) ret[i] = fn(arrayLike[i]);
+    return ret;
 }
 
-// Here's the javascript for the calculator task
-
-var plus = document.getElementById('plus').addEventListener
-('click', buttonClick);
-var minus = document.getElementById('minus').addEventListener
-('click', buttonClick);
-var times = document.getElementById('times').addEventListener
-('click', buttonClick);
-var divide = document.getElementById('divide').addEventListener
-('click', buttonClick);
-
-// var but = document.getElementByClass("butts");
-var num1 = document.getElementById("num1");
-var num2 = document.getElementById("num2");
-var total = document.getElementsByTagName("h4")
-
-function buttonClick(){
-    console.log(total);
-    if(document.getElementById('plus')){
-        total = eval(num1+num2);
-    }
-
+function getText(node){
+    if (node.nodeType === 3) return node.data;
+    var txt = '';
+    if (node = node.firstChild) do {
+        txt += getText(node);
+    } while (node = node.nextSibling);
+    return txt; //Got this from the internet, sort of know what it does
 }
+
+var remove = document.getElementById('remove').addEventListener
+('click', remove);
+
+function remove(){
+    ret.shift();
+}
+
+
+// var button = document.getElementById('remove').addEventListener
+// ('click', buttonClick);
+
+// var itemList = document.querySelector('#items');
+
+//     function buttonClick(){
+
+//        console.log(itemList.firstElementChild);
+//        itemList.firstElementChild.textContent = ' ';
+
+// }
+
+
+

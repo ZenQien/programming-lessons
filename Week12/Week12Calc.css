@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+}
+
+li{
+    display: flex;
+    padding: 10px;
+    font-size: 30px;
+    font-family: helvetica;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+button{
+    text-align: center;
+}
+
+.butts{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+h4{
+    text-align: center;
+}

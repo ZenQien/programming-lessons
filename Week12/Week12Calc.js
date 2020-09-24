@@ -37,9 +37,9 @@ var num1 = document.getElementsByClassName("inp");
 num2 = document.getElementsByClassName("inp1");
 op = document.getElementsByClassName("oper");
 ans = document.getElementsByTagName('h4');
-oper = document.getElementsByClassName("oper");
+oper = document.getElementsByTagName("button")[0].getAttribute("class");
 
-var shoans = function solve() {
+function solve() {
     num1 = parseFloat(num1);
     num2 = parseFloat(num2);
 
@@ -63,9 +63,9 @@ var shoans = function solve() {
     }
 
     console.log(ans)
-    ans = shoans;
+    ans
 }
 
-for (var i = 0, l = oper.length; i < 1; i++){
-    oper[i].onclick = shoans;
-}
+// for (var i = 0, l = oper.length; i < 1; i++){
+//     oper[i].onclick = shoans;
+// }

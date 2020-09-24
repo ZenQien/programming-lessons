@@ -39,7 +39,7 @@ op = document.getElementsByClassName("oper");
 ans = document.getElementsByTagName('h4');
 oper = document.getElementsByClassName("oper");
 
-var shoans = function() {
+var shoans = function solve() {
     num1 = parseFloat(num1);
     num2 = parseFloat(num2);
 
@@ -62,6 +62,7 @@ var shoans = function() {
             break;
     }
 
+    console.log(ans)
     ans = shoans;
 }
 

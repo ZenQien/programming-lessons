@@ -35,10 +35,7 @@
 
 // Below
 
-var op = document.getElementsByTagName("button");
-var oper = document.getElementByClassName(".plus, .minus, .times, multiply")
-
-function solve() {
+function solve(operator) {
 
 var num1 = document.getElementsByClassName("inp")[0].value;
 num2 = document.getElementsByClassName("inp1")[0].value;
@@ -46,25 +43,22 @@ num2 = document.getElementsByClassName("inp1")[0].value;
     // num1 = parseFloat(num1);
     // num2 = parseFloat(num2);
 
-    console.log(parseInt(num1)+parseInt(num2));
-    console.log(num2);
-
-    switch(document.getElementById(button.id).value) {
+    switch(operator) {
 
         case "plus":
              console.log(parseInt(num1) + parseInt(num2));
             break;
 
         case "minus":
-            
+            console.log(parseInt(num1) - parseInt(num2));
             break;
         
         case "times":
-            
+            console.log(parseInt(num1) * parseInt(num2));
             break;
         
         case "divide":
-            
+            console.log(parseInt(num1) / parseInt(num2));
             break;
     }
 

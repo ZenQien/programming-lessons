@@ -33,44 +33,50 @@
 //     }
 // }
 
+// Below
 
+var op = document.getElementsByTagName("button");
+var oper = document.getElementByClassName(".plus, .minus, .times, multiply")
 
 function solve() {
 
 var num1 = document.getElementsByClassName("inp")[0].value;
 num2 = document.getElementsByClassName("inp1")[0].value;
-op = document.getElementsByClassName("oper");
- ans = 0;
 
     // num1 = parseFloat(num1);
     // num2 = parseFloat(num2);
 
-    console.log(num1);
+    console.log(parseInt(num1)+parseInt(num2));
     console.log(num2);
 
-
-    switch(op) {
+    switch(document.getElementById(button.id).value) {
 
         case "plus":
-            ans = eval(num1 + num2);
+             console.log(parseInt(num1) + parseInt(num2));
             break;
 
         case "minus":
-            ans = eval(num1 - num2);
+            
             break;
         
         case "times":
-            ans = eval(num1 * num2);
+            
             break;
         
         case "divide":
-            ans = eval(num1 / num2);
+            
             break;
     }
 
-    console.log(ans);
 }
+
+// Above
 
 // for (var i = 0, l = oper.length; i < 1; i++){
 //     oper[i].onclick = shoans;
 // }
+
+// const calc = document.querySelector('.calculator')
+// const keys = calculator.querySelector('.calculator_keys')
+
+// keys.addEventListerner('click, e =>')

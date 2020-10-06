@@ -33,41 +33,42 @@
 //     }
 // }
 
+
+
+function solve() {
+
 var num1 = document.getElementsByClassName("inp")[0].value;
 num2 = document.getElementsByClassName("inp1")[0].value;
 op = document.getElementsByClassName("oper");
-ans = document.getElementsByTagName('h4');
-oper = document.getElementsByTagName("button")[0].getAttribute("class");
-
-function solve() {
+ ans = 0;
 
     // num1 = parseFloat(num1);
     // num2 = parseFloat(num2);
 
     console.log(num1);
+    console.log(num2);
 
 
-    switch(oper) {
+    switch(op) {
 
         case "plus":
-            console.log("lol")
+            ans = eval(num1 + num2);
             break;
 
         case "minus":
-            ans = num1 - num2;
+            ans = eval(num1 - num2);
             break;
         
         case "times":
-            ans = num1 * num2;
+            ans = eval(num1 * num2);
             break;
         
         case "divide":
-            ans = num1 / num2;
+            ans = eval(num1 / num2);
             break;
     }
 
-    console.log(ans)
-    ans
+    console.log(ans);
 }
 
 // for (var i = 0, l = oper.length; i < 1; i++){
